@@ -4,10 +4,11 @@
 }
 
 header {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   height: 60px;
   display: flex;
   align-items: center;
-  padding: 0px 20px 20px 0px;
+  padding: 0px 40px 20px 40px;
   margin-top: 25px;
   border-bottom: 0.5px solid #c2c2c2; /* Add a thin line at the bottom */
 }
@@ -69,48 +70,60 @@ nav ul li a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0%;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
     padding: 220px 0;
     margin-top: -10;
+    margin-bottom: 20px;
     color: black;
+
 }
   
 .banner h1 {
     font-size: 25px;
     font-weight: 900;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
   
 .banner h2 {
     font-size: 80px;
     font-weight: bolder;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
   
 .banner .btn {
     display: inline-block;
-    padding: 12px 34px;
+    padding: 12px 40px;
     background-color: black;
     color: #fff;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bolder;
     text-decoration: none;
     border-radius: 4px;
 }
 
 .product-section {
+    font-family: 'Montserrat', sans-serif;
     padding: 30px;
     text-align: left;
+    margin-bottom: -50px;
+}
+
+.product-section h2{
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .product-heading {
-    display: flex;
-    align-items: center;
-    margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Align items horizontally */
+  margin-bottom: 35px;
 }
 
 .product-title{
   font-size: 30px;
+  text-align: left;
   margin-left: 20px;
 }
 
@@ -127,7 +140,7 @@ nav ul li a:hover {
     margin: 15px;
     background-color: #fff;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    text-align: center;
+    text-align: left;
 }  
   
 .product-card img {
@@ -154,6 +167,7 @@ nav ul li a:hover {
 }
   
 #show-more-button {
+    font-family: 'Montserrat', sans-serif;
     padding: 10px 25px;
     background-color: black;
     border-radius: 4px;
@@ -165,6 +179,7 @@ nav ul li a:hover {
 }
 
 #show-less-button {
+    font-family: 'Montserrat', sans-serif;
     padding: 10px 25px;
     background-color: black;
     border-radius: 4px;
@@ -208,6 +223,7 @@ nav ul li a:hover {
 }
   
 .review-info {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -271,6 +287,7 @@ footer {
 }
   
 .footer-column {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     width: 33.33%;
     float: left;
 }
@@ -303,18 +320,21 @@ footer {
 .sort-by-container {
     display: flex;
     align-items: center;
-    margin-left: 680px;
-    margin-right: 0;
+    margin-right: -700px;
   }
   .product-count{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 0;
     margin-right: 0;
   }
   
   .sort-by-label {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-right: 10px;
   }
   
   .dropdown {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     position: relative;
     display: inline-block;
   }
@@ -378,7 +398,7 @@ footer {
 }
 
 .container h2 {
-  font-size: 30px;
+  font-size: 40px;
   margin-bottom: 15px;
 }
 
