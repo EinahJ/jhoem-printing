@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Profile</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+  <style>
+    .profile-section {
+        max-width: 600px;
+        margin: 50px ;
+        padding: 20px;
+        text-align: left;
+      }
+
+      .profile-section h1{
+        font-family: 'Montserrat', sans-serif;
+        margin-bottom: 40px;
+      }
+      
+      .profile-info {
+        margin-bottom: 20px;
+      }
+      
+      .info-row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      
+      .info-label {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        width: 130px;
+      }
+      
+      .info-value {
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 20px 0px 20px 25px;
+    }
+      
+    .profile-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 35px;
+      }
+      
+      .edit-profile-button{
+        padding: 10px 63px;
+        background-color: black;
+        color: #fff;
+        border: none;
+        font-size: 14px;
+        cursor: pointer;
+        margin-bottom: 15px; 
+      }
+      .change-password-button {
+        padding: 10px 40px;
+        background-color: black;
+        color: #fff;
+        border: none;
+        font-size: 14px;
+        cursor: pointer;
+        margin-bottom: 15px; 
+      }
+      .logout-button {
+        padding: 10px 75px;
+        background-color: black;
+        border: none;
+        font-size: 14px;
+        cursor: pointer;
+        margin-bottom: 15px; 
+      }
+
+      .logout-button a{
+        text-decoration: none;
+        color: #fff;
+      }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo"> 
+        <img src="img/logo.png" alt="Logo">
+    </a>
+
+    <nav>
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="#">Contacts</a></li>
+        <li><a href="#">Request a Quote</a></li>
+        </ul>
+    </nav>
+
+    <div class="search">
+        <input type="text" placeholder=" Search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+    </div>
+
+    <a href="profile.html" class="user-icon"> 
+        <i class="fa fa-user"></i>
+    </a>  
+  </header>
+
+  <div class="profile-section">
+    <h1>My Profile</h1>
+    <div class="profile-info">
+      <div class="info-row">
+        <div class="info-label">First Name</div>
+        <div class="info-value">Stephanie</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">Last Name</div>
+        <div class="info-value">Iraga</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">Email Address</div>
+        <div class="info-value">stephanie1iraga7@gmail.com</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">Address</div>
+        <div class="info-value">209 Nicanor Garcia St., Bel-Air II, Makati City</div>
+      </div>
+    </div>
+
+    <div class="profile-buttons">
+      <button class="edit-profile-button">Edit Profile</button>
+      <button class="change-password-button">Change Password</button>
+      <button class="logout-button"><a href="profile.html">Logout</a></button>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-column">
+        <h3>Customer Items</h3>
+        <ul>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Return/Refund Policy</a></li>
+          <li><a href="#">Size Chart</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+    
+      <div class="footer-column">
+        <h3>Work with Us</h3>
+        <ul>
+          <li><a href="#">Are you a business/brand that wants to work<br>with us?</a></li>
+          <li><a href="#">B2B & Brand Contact Form</a></li>
+        </ul>
+      </div>
+    
+      <div class="footer-column">
+        <h3>Contact Support</h3>
+        <ul>
+          <li>Hours: Mon-Sat 1PM - 9PM PST</li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>  </footer>
+</body>
+</html>
