@@ -204,7 +204,7 @@ nav ul li a:hover {
     font-size: 15px;
     color: #333;
     cursor: pointer;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 #less-rev-button {
@@ -214,7 +214,7 @@ nav ul li a:hover {
     font-size: 15px;
     color: #333;
     cursor: pointer;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .review-section {
@@ -326,7 +326,6 @@ footer {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-left: 0;
     margin-right: 0;
-    margin-left: auto;
   }
   
   .sort-by-label {
