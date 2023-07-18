@@ -40,7 +40,8 @@
         </div>
         <div class="column">
             <div class="details">
-            <h1 id="ProductN">Custom Polaroid <br> Prints</h1>
+            <h1 id="ProductN">ID Print</h1>
+            <h2 class="sub">(Packages Offered)</h2>
             <div class="review-summary">
                 <div class="stars">
                   <span class="star">&#9733;</span>
@@ -51,13 +52,26 @@
                 </div>
                 <div class="review-count">(24)</div>
                 <h6 class="price">₱5.00</h6>
-                <p class="notes">Add a touch of vintage charm to your memories with our customized polaroid prints. Each print captures your special moments in a classic polaroid style, making them perfect for decorating your space or sharing as thoughtful gifts.</p>
-                <p class="selectsize">Select Size:</p>
-                <select name="sizess" id="sizess">
-                    <option value="mini">Mini</option>
-                    <option value="medium">Medium</option>
-                    <option value="large">Large</option>
-                  </select><br>
+                <p class="notes">perfect for ID photos. Our packages offer a mix of 1x1 and 2x2 prints to suit your needs. With high-quality results and quick turnaround times, we simplify the process of obtaining professional photos. Trust us to deliver exceptional prints tailored to your photo requirements.</p>
+                <p class="selectsize">Additional Info:</p>
+                <select name="pack" id="choices">
+                    <option value="" disabled selected hidden>Select Package</option>
+                    <option value="pack1">Package 1</option>
+                    <option value="pack2">Package 2</option>
+                    <option value="pack3">Package 3</option>
+                    <option value="pack4">Package 4</option>
+                </select><br>
+                <select name="pack" id="choices">
+                  <option value="" disabled selected hidden>Name Options</option>
+                  <option value="pack1">With Name</option>
+                  <option value="pack2">Without Name</option>
+                </select><br>
+                <select name="pack" id="choices">
+                  <option value="" disabled selected hidden>Attire</option>
+                  <option value="pack1">No Attire</option>
+                  <option value="pack2">With Attire</option>
+                  
+                </select><br>
                   <button class="attach">Attach Photo</button>
                   <button class="cart">Add to Cart</button>
             </div>
@@ -70,104 +84,71 @@
 
   <style>
     * {
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  height: 60px;
-  display: flex;
-  align-items: center;
-  padding: 0px 20px 20px 0px;
-  margin-top: 25px;
-  border-bottom: 0.5px solid #c2c2c2; /* Add a thin line at the bottom */
-}
-
-.logo img {
-  height: 250px;
-}
-
-nav ul {
-  list-style-type: none;
-  display: flex;
-}
-
-nav ul li {
-  margin-right: 15px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #333;
-}
-
-nav ul li a:hover {
-  text-decoration: underline;
-}
-
-.search {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-}
-
-.search input[type="text"] {
-  height: 24px;
-  padding: 5px;
-  border-radius: 4px 0px 0px 4px;
-  border: 2px solid black;
-}
-
-.search button {
-  height: 38px;
-  padding: 0 10px;
-  border: none;
-  background-color: #333;
-  color: #fff;
-  border-radius: 0px 4px 4px 0px;
-  cursor: pointer;
-}
-
-.user-icon {
-  font-size: 35px;
-  color: #333;
-  margin-top: 0.5%;
-  margin-left: 15px;
-}
+    margin: 0;
+    padding: 0;
+  }
   
-.banner {
-    background-image: url("img/bg.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 0%;
-    text-align: center;
-    padding: 220px 0;
-    margin-top: -10;
-    color: black;
-}
+  header {
+    background-color: #f2f2f2;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
   
-.banner h1 {
-    font-size: 25px;
-    font-weight: 900;
-    margin-bottom: 20px;
-}
+  .logo img {
+    height: 250px;
+  }
   
-.banner h2 {
-    font-size: 80px;
-    font-weight: bolder;
-    margin-bottom: 40px;
-}
+  nav ul {
+    list-style-type: none;
+    display: flex;
+  }
   
-.banner .btn {
-    display: inline-block;
-    padding: 12px 34px;
-    background-color: black;
-    color: #fff;
-    font-size: 18px;
-    font-weight: bolder;
+  nav ul li {
+    margin-right: 15px;
+  }
+  
+  nav ul li a {
     text-decoration: none;
-    border-radius: 4px;
-}
+    color: #333;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .search {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  
+  .search input[type="text"] {
+    height: 24px;
+    padding: 5px;
+    border-radius: 4px 0px 0px 4px;
+    border: 2px solid black;
+  }
+  
+  .search button {
+    height: 38px;
+    padding: 0 10px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+  }
+  
+  .user-icon {
+    font-size: 35px;
+    color: #333;
+    margin-top: 0.5%;
+    margin-left: 15px;
+  }
   .row {
     display: flex;
   }
@@ -205,7 +186,7 @@ nav ul li a:hover {
     font-weight: bolder; 
   }
   .sub{
-      font-family: monospace;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       font-size: 40px;
       margin-bottom: 10px;
 
@@ -228,7 +209,7 @@ nav ul li a:hover {
 .price{
     margin-top: 10px;
     color: #000;
-    font-family: monospace;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
@@ -237,7 +218,7 @@ nav ul li a:hover {
 .notes{
     margin-top: 15px;
     color: #515151;
-    font-family: monospace;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -249,8 +230,8 @@ nav ul li a:hover {
 }
 .selectsize{
     margin-top: 15px;
-    color: #6f6d6d;
-    font-family: monospace;
+    color:  black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -258,14 +239,15 @@ nav ul li a:hover {
     text-transform: capitalize;
     margin-right: 150px;
 }
-#sizess{
-    width: 185px;
-    height: 53px;
+#choices{
+    margin-top: 10px;
+    width: 550px;
+    height: 55px;
     flex-shrink: 0; 
     border: 0.5px solid rgba(41, 41, 41, 0.71);
     background: #FFF;
     color: #767676;
-    font-family: monospace;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;

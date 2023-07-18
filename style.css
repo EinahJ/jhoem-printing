@@ -308,6 +308,7 @@ footer {
   }
   .product-count{
     margin-right: 0;
+    margin-left: auto;
   }
   
   .sort-by-label {
