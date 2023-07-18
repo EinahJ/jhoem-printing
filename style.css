@@ -7,9 +7,9 @@ header {
   height: 60px;
   display: flex;
   align-items: center;
-  padding: 0 20px;
+  padding: 0px 20px 20px 0px;
   margin-top: 25px;
-  margin-bottom: 25px;
+  border-bottom: 0.5px solid #c2c2c2; /* Add a thin line at the bottom */
 }
 
 .logo img {
@@ -71,6 +71,7 @@ nav ul li a:hover {
     background-position: 0%;
     text-align: center;
     padding: 220px 0;
+    margin-top: -10;
     color: black;
 }
   
@@ -116,8 +117,8 @@ nav ul li a:hover {
   .product-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content:flex-start;
-    margin: 0px 30px 0px 30px;
+    justify-content: flex-start;
+    margin: 0px 0px 0px 50px;
   }
   
 .product-card {
@@ -265,7 +266,8 @@ footer {
     color: black;
     padding: 50px;
     padding-top: 20px;
-    margin-left: 30px;
+    margin-left: 1px;
+    border-top: 0.5px solid #c2c2c2; /* Add a thin line at the bottom */
 }
   
 .footer-column {
@@ -301,7 +303,7 @@ footer {
 .sort-by-container {
     display: flex;
     align-items: center;
-    margin-left: 750px;
+    margin-left: 680px;
     margin-right: 0;
   }
   .product-count{
@@ -365,9 +367,63 @@ footer {
     opacity: 0.5;
     cursor: not-allowed;
 }
+.container {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+  margin-bottom: 30px;
+  height: 50vh;
+}
 
+.container h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
 
+form input[type="email"],
+form input[type="password"] {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: block;
+  margin: 12px 0;
+  padding: 10px 20px;
+  width: 300px;
+  border: 1px solid #333;
+}
 
+.form-footer {
+  margin-top: 10px;
+  text-align: left;
+}
 
+.form-footer a {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 12px;
+  margin-left: 1px;
+  color: #333;
+  text-decoration: none;
+}
 
-  
+.sign-in-button {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 40px;
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.create-account {
+  margin-top: -10px;
+  text-align: center;
+}
+
+.create-account a {
+  color: black;
+  font-size: 11px;
+  opacity: 0.5;
+}
