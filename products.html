@@ -105,82 +105,98 @@
             {
                 image: 'img/simpcard.jpg',
                 name: 'Polyvinyl Chloride Card (PVC) Simp Card',
-                price: 'Starts at ₱60.00'
+                price: 'Starts at ₱60.00',
+                link: 'simpcard.html'
             },
             {
                 image: 'img/photoprint.jpg',
                 name: 'Photo Prints',
-                price: 'Starts at ₱10.00'
+                price: 'Starts at ₱10.00',
+                link: 'Photoprint.html'
             },
             {
-              image: 'img/package1.jpg',
+              image: 'img/ID.png',
               name: 'ID Print',
-              price: 'Starts at ₱60.00'
+              price: 'Starts at ₱60.00',
+            link: 'idpic.html'
             },
             {
-              image: 'img/bikesticker.jpg',
-              name: 'Bike Sticker',
-              price: 'Starts at ₱9.00'
+              image: 'img/decal.png',
+              name: 'Custom Decals',
+              price: 'Starts at ₱40.00',
+            link: 'decal.html'
             },
             {
-            image: 'img/business card.jpg',
-            name: 'Business Card',
-            price: 'Starts at ₱60.00'
+            image: 'img/PVCcard.png',
+            name: 'Custom PVC Card ',
+            price: 'Starts at ₱90.00',
+            link: 'PVCcard.html'
             },
             {
-            image: 'img/flyers.jpg',
-            name: 'Flyers',
-            price: 'Starts at ₱9.00'
+            image: 'img/10pcSet.png',
+            name: 'Custom Sticker (10 pcs)',
+            price: 'Starts at ₱30.00',
+            link: 'CSticker.html'
             },
             {
-            image: 'img/instax-mini.jpg',
-            name: 'Instax Mini',
-            price: 'Starts at ₱60.00'
+            image: 'img/inv.png',
+            name: 'Invitation Cards',
+            price: 'Starts at ₱7.00',
+            link: 'invitation.html'
             },
             {
             image: 'img/instax-square.jpg',
-            name: 'Instax Square',
-            price: 'Starts at ₱9.00'
+            name: 'Custom Polaroid Print',
+            price: 'Starts at ₱5.00',
+            link: 'polaroid.html'
             },
             {
-            image: 'img/instax-wide.jpg',
-            name: 'Instax Wide',
-            price: 'Starts at ₱60.00'
+            image: 'img/water.png',
+            name: 'Custom Water Proof Sticker',
+            price: 'Starts at ₱15.00',
+            link: 'WPsticker.html'
             },
             {
             image: 'img/keychain1.jpg',
             name: 'Personalized Keychain',
-            price: 'Starts at ₱9.00'
+            price: 'Starts at ₱9.00',
+            link: 'keychain.html'
             },
             {
             image: 'img/motorsticker.jpg',
             name: 'Motor Sticker',
-            price: 'Starts at ₱60.00'
+            price: 'Starts at ₱60.00',
+            link: 'decal.html'
             },
             {
             image: 'img/mug.jpg',
             name: 'Personalized Mug Sticker',
-            price: 'Starts at ₱9.00'
+            price: 'Starts at ₱9.00',
+            link: 'simpcard.html'
             },
             {
             image: 'img/polaroid-600.jpg',
             name: 'Polaroid 600',
-            price: 'Starts at ₱60.00'
+            price: 'Starts at ₱60.00',
+            link: 'simpcard.html'
             },
             {
             image: 'img/polaroid-go.jpg',
             name: 'Polaroid Go',
-            price: 'Starts at ₱9.00'
+            price: 'Starts at ₱9.00',
+            link: 'simpcard.html'
             },
             {
             image: 'img/sticker.jpg',
             name: 'Personalized Sticker',
-            price: 'Starts at ₱9.00'
+            price: 'Starts at ₱9.00',
+            link: 'WPstickers.html'
             },
             {
             image: 'img/wedinvitation.jpg',
             name: 'Invitation',
-            price: 'Starts at ₱9.00'
+            price: 'Starts at ₱9.00',
+            link: 'invitaion.html'
             }
             
             // Add more products here...
@@ -196,6 +212,10 @@
             productContainer.innerHTML = '';
 
             productsToDisplay.forEach(product => {
+
+                const link = document.createElement('a');
+                link.href = product.link;
+
                 const card = document.createElement('div');
                 card.classList.add('product-card');
 
@@ -212,7 +232,8 @@
                 price.textContent = product.price;
                 card.appendChild(price);
 
-                productContainer.appendChild(card);
+                link.appendChild(card);
+                productContainer.appendChild(link);
             });
 
             currentPageSpan.textContent = page.toString();

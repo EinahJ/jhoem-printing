@@ -52,7 +52,13 @@
                 <div class="review-count">(27)</div>
                 <h6 class="price">Starts at ₱15.00</h6>
                 <p class="notes">The perfect way to add a personalized touch to your favorite mugs. Crafted with high-quality materials, these stickers are designed to withstand everyday use and frequent washing without fading or peeling. With their waterproof feature, you can confidently enjoy your favorite beverages without worrying about the stickers getting damaged. </p>
-                
+                <p class="selectsize">Additional Info:</p>
+                <select name="sizess" id="sizess">
+                  <option value="" disabled selected hidden>Urgency</option>
+                  <option value="mini">Low</option>
+                  <option value="medium">Medium</option>
+                  <option value="large">High</option>
+                </select><br>
                   <button class="attach">Attach Photo</button>
                   <button class="cart">Add to Cart</button>
             </div>
@@ -70,6 +76,7 @@
 }
 
 header {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   height: 60px;
   display: flex;
   align-items: center;
@@ -244,7 +251,7 @@ nav ul li a:hover {
 }
 .selectsize{
     margin-top: 15px;
-    color: #6f6d6d;
+    color: black;
     font-family: monospace;
     font-size: 16px;
     font-style: normal;
@@ -254,7 +261,7 @@ nav ul li a:hover {
     margin-right: 150px;
 }
 #sizess{
-    width: 185px;
+    width: 550px;
     height: 53px;
     flex-shrink: 0; 
     border: 0.5px solid rgba(41, 41, 41, 0.71);
@@ -267,6 +274,7 @@ nav ul li a:hover {
     line-height: normal;    
     padding-left: 20px;
     padding-right: -30px ;
+    margin-top: 10px;
     
 }
 

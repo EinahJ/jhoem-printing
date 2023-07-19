@@ -52,7 +52,13 @@
                 <div class="review-count">(73)</div>
                 <h6 class="price">₱90.00</h6>
                 <p class="notes"> Made with high-quality photo paper, this keychain ensures your pictures look sharp and vibrant. Plus, it's waterproof, so no need to worry about accidental spills or rainy days. Show off twice the memories with our Acrylic Photo Insert Keychain, giving you the option to display two of your favorite photos .</p>
-                
+                <p class="selectsize">Additional Info:</p>
+                <select name="sizess" id="sizess">
+                  <option value="" disabled selected hidden>Urgency</option>
+                  <option value="mini">Low</option>
+                  <option value="medium">Medium</option>
+                  <option value="large">High</option>
+                </select><br>
                   <button class="attach">Attach Photo</button>
                   <button class="cart">Add to Cart</button>
             </div>
@@ -70,6 +76,7 @@
 }
 
 header {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   height: 60px;
   display: flex;
   align-items: center;
@@ -198,9 +205,10 @@ nav ul li a:hover {
     font-family: 'Montserrat', sans-serif;
     font-size: 60px;
     font-weight: bolder; 
+    margin-bottom: 30px;
   }
   .sub{
-      font-family: monospace;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       font-size: 40px;
       margin-bottom: 10px;
 
@@ -216,14 +224,14 @@ nav ul li a:hover {
     vertical-align: middle;
     margin-left: 5px; 
     color: #515151;
-    font-family: monospace;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
     font-size: 20px;
 }
 .price{
     margin-top: 10px;
     color: #000;
-    font-family: monospace;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
@@ -232,7 +240,7 @@ nav ul li a:hover {
 .notes{
     margin-top: 15px;
     color: #515151;
-    font-family: monospace;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -244,8 +252,8 @@ nav ul li a:hover {
 }
 .selectsize{
     margin-top: 15px;
-    color: #6f6d6d;
-    font-family: monospace;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -254,19 +262,20 @@ nav ul li a:hover {
     margin-right: 150px;
 }
 #sizess{
-    width: 185px;
+    width: 550px;
     height: 53px;
     flex-shrink: 0; 
     border: 0.5px solid rgba(41, 41, 41, 0.71);
     background: #FFF;
     color: #767676;
-    font-family: monospace;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;    
     padding-left: 20px;
     padding-right: -30px ;
+    margin-top: 10px;
     
 }
 

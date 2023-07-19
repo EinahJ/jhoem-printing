@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JhoemEmman</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo"> 
+      <img src="img/logo.png" alt="Logo">
+    </a>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="#">Contacts</a></li>
+        <li><a href="#">Request a Quote</a></li>
+      </ul>
+    </nav>
+
+    <div class="search">
+      <input type="text" placeholder=" Search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </div>
+
+    <a href="profile.html" class="user-icon"> 
+      <i class="fa fa-user"></i>
+    </a>
+
+  </header>
+
+  <body>
+    <h1 class="title">Contact Us</h1>
+    <div class="inputContainer">
+    <input class="Inputbox" type="text" id="Fname" name="Fname" placeholder="Fullname"><br>
+    <input class="Inputbox" type="text" id="Email" name="Email" placeholder="Email Address"><br>
+    <input class="Inputbox" type="text" id="Tquery" name="Tquery" placeholder="Type of Query"><br>
+    <textarea id="msg" class="MessageBox" name="msg" rows="4" cols="80" placeholder="Write your message here"></textarea>
+
+    </div>
+
+  </body>
+
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0px 20px 20px 0px;
+  margin-top: 25px;
+  border-bottom: 0.5px solid #c2c2c2; /* Add a thin line at the bottom */
+}
+
+.logo img {
+  height: 250px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.search input[type="text"] {
+  height: 24px;
+  padding: 5px;
+  border-radius: 4px 0px 0px 4px;
+  border: 2px solid black;
+}
+
+.search button {
+  height: 38px;
+  padding: 0 10px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  border-radius: 0px 4px 4px 0px;
+  cursor: pointer;
+}
+
+.user-icon {
+  font-size: 35px;
+  color: #333;
+  margin-top: 0.5%;
+  margin-left: 15px;
+}
+  
+.banner {
+    background-image: url("img/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    text-align: center;
+    padding: 220px 0;
+    margin-top: -10;
+    color: black;
+}
+  
+.banner h1 {
+    font-size: 25px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+  
+.banner h2 {
+    font-size: 80px;
+    font-weight: bolder;
+    margin-bottom: 40px;
+}
+  
+.banner .btn {
+    display: inline-block;
+    padding: 12px 34px;
+    background-color: black;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bolder;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.title{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.Inputbox{
+  width: 558px;
+height: 42px;
+flex-shrink: 0;
+border-radius: 5px;
+border: 1px solid #B4B4B4;
+background: #FFF;
+padding-left: 30px;
+margin-bottom: 30px;
+
+}
+.MessageBox{
+
+width: 558px;
+flex-shrink: 0;
+border-radius: 5px;
+border: 1px solid #B4B4B4;
+background: #FFF;
+padding-left: 30px;
+margin-bottom: 30px;
+padding-top: 8px;
+
+}
+
+
+.inputContainer{
+text-align: center;
+
+}
+  
+ 
+  </style>

@@ -1,9 +1,82 @@
-* {
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JhoemEmman</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo"> 
+      <img src="img/logo.png" alt="Logo">
+    </a>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="#">Contacts</a></li>
+        <li><a href="#">Request a Quote</a></li>
+      </ul>
+    </nav>
+
+    <div class="search">
+      <input type="text" placeholder=" Search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </div>
+
+    <a href="profile.html" class="user-icon"> 
+      <i class="fa fa-user"></i>
+    </a>
+
+  </header>
+
+  <body>
+    <div class="row">
+        <div class="column">
+            <img class="itempic" src="img/PVCcard.png"  alt="Polaroid">
+        </div>
+        <div class="column">
+            <div class="details">
+            <h1 id="ProductN">PVC Card <br>Custom Print</h1>
+            <div class="review-summary">
+                <div class="stars">
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                </div>
+                <div class="review-count">(59)</div>
+                <h6 class="price">₱90.00</h6>
+                <p class="notes">Express your fandom or personal style with our Custom PVC Card Printing service. From showcasing your favorite K-pop idols to beloved anime characters, we can bring your unique designs to life on high-quality PVC cards. Whether it's for personal enjoyment or special events, our printing service ensures vibrant and detailed prints that capture the essence of your chosen artwork.</p>
+                <p class="selectsize">Additional Info:</p>
+                <select name="sizess" id="sizess">
+                  <option value="" disabled selected hidden>Urgency</option>
+                  <option value="mini">Low</option>
+                  <option value="medium">Medium</option>
+                  <option value="large">High</option>
+                </select><br>
+                  <button class="attach">Attach Photo</button>
+                  <button class="cart">Add to Cart</button>
+            </div>
+        </div>
+        </div>
+      </div>
+
+
+  </body>
+
+  <style>
+    * {
   margin: 0;
   padding: 0;
 }
 
 header {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   height: 60px;
   display: flex;
   align-items: center;
@@ -119,10 +192,10 @@ nav ul li a:hover {
   .itempic{
     margin-top: 50px;
     margin-bottom: 50px;
-    margin-left: 100px;
+    margin-left: 130px;
     align-items: center;
     height: 700px;
-    width: 450px:
+    width: 530px:
   }
   .details{
     margin-top: 50px;
@@ -178,7 +251,7 @@ nav ul li a:hover {
 }
 .selectsize{
     margin-top: 15px;
-    color: #6f6d6d;
+    color: black;
     font-family: monospace;
     font-size: 16px;
     font-style: normal;
@@ -188,7 +261,7 @@ nav ul li a:hover {
     margin-right: 150px;
 }
 #sizess{
-    width: 185px;
+    width: 550px;
     height: 53px;
     flex-shrink: 0; 
     border: 0.5px solid rgba(41, 41, 41, 0.71);
@@ -201,6 +274,7 @@ nav ul li a:hover {
     line-height: normal;    
     padding-left: 20px;
     padding-right: -30px ;
+    margin-top: 10px;
     
 }
 
@@ -237,3 +311,4 @@ nav ul li a:hover {
 }
 
  
+  </style>

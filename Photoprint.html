@@ -36,12 +36,11 @@
   <body>
     <div class="row">
         <div class="column">
-            <img class="itempic" src="img/ID.png"  alt="Polaroid">
+            <img class="itempic" src="img/photoprintt.png"  alt="Polaroid">
         </div>
         <div class="column">
             <div class="details">
-            <h1 id="ProductN">ID Print</h1>
-            <h2 class="sub">(Packages Offered)</h2>
+            <h1 id="ProductN">Photo Print</h1>
             <div class="review-summary">
                 <div class="stars">
                   <span class="star">&#9733;</span>
@@ -50,34 +49,22 @@
                   <span class="star">&#9733;</span>
                   <span class="star">&#9733;</span>
                 </div>
-                <div class="review-count">(72)</div>
-                <h6 class="price">₱120.00</h6>
-                <p class="notes">Perfect for ID photos. Our packages offer a mix of 1x1 and 2x2 prints to suit your needs. With high-quality results and quick turnaround times, we simplify the process of obtaining professional photos. Trust us to deliver exceptional prints tailored to your photo requirements.</p>
+                <div class="review-count">(24)</div>
+                <h6 class="price">Start at ₱20.00</h6>
+                <p class="notes">Capture and cherish your special moments with our Photo Printing service, offering a variety of sizes to suit your preferences. From cute and wallet-sized prints, to standard sizes like 4R, 5R, 6R, 8R, anWhether you want to create a photo wall, share memories with friends, or simply keep them close, our photo prints are here to bring your images to life. </p>
                 <p class="selectsize">Additional Info:</p>
-                <select name="pack" id="choices">
-                    <option value="" disabled selected hidden>Select Package</option>
-                    <option value="pack1">Package 1</option>
-                    <option value="pack2">Package 2</option>
-                    <option value="pack3">Package 3</option>
-                    <option value="pack4">Package 4</option>
-                </select><br>
-                <select name="pack" id="choices">
-                  <option value="" disabled selected hidden>Name Options</option>
-                  <option value="pack1">With Name</option>
-                  <option value="pack2">Without Name</option>
-                </select><br>
-                <select name="pack" id="choices">
-                  <option value="" disabled selected hidden>Attire</option>
-                  <option value="pack1">No Attire</option>
-                  <option value="pack2">With Attire</option>
-                  
-                </select><br>
-                <select name="sizess" id="choices">
-                  <option value="" disabled selected hidden>Urgency</option>
-                  <option value="mini">Low</option>
-                  <option value="medium">Medium</option>
-                  <option value="large">High</option>
-                </select><br>
+                <select name="sizess" id="sizess">
+                    <option value="" disabled selected hidden>Select Sizes</option>
+                    <option value="mini">Mini</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                  </select><br>
+                  <select name="sizess" id="sizess">
+                    <option value="" disabled selected hidden>Urgency</option>
+                    <option value="mini">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">High</option>
+                  </select><br>
                   <button class="attach">Attach Photo</button>
                   <button class="cart">Add to Cart</button>
             </div>
@@ -89,7 +76,7 @@
   </body>
 
   <style>
-   * {
+* {
   margin: 0;
   padding: 0;
 }
@@ -211,10 +198,10 @@ nav ul li a:hover {
   .itempic{
     margin-top: 50px;
     margin-bottom: 50px;
-    margin-left: 120px;
+    margin-left: 100px;
     align-items: center;
-    height: 800px;
-    width: 500px:
+    height: 700px;
+    width: 450px:
   }
   .details{
     margin-top: 50px;
@@ -224,6 +211,7 @@ nav ul li a:hover {
     font-family: 'Montserrat', sans-serif;
     font-size: 60px;
     font-weight: bolder; 
+    margin-bottom: 30px;
   }
   .sub{
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -242,7 +230,7 @@ nav ul li a:hover {
     vertical-align: middle;
     margin-left: 5px; 
     color: #515151;
-    font-family: monospace;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
     font-size: 20px;
 }
@@ -270,7 +258,7 @@ nav ul li a:hover {
 }
 .selectsize{
     margin-top: 15px;
-    color:  black;
+    color: black;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 16px;
     font-style: normal;
@@ -279,8 +267,7 @@ nav ul li a:hover {
     text-transform: capitalize;
     margin-right: 150px;
 }
-#choices{
-    margin-top: 10px;
+#sizess{
     width: 550px;
     height: 55px;
     flex-shrink: 0; 
@@ -294,6 +281,7 @@ nav ul li a:hover {
     line-height: normal;    
     padding-left: 20px;
     padding-right: -30px ;
+    margin-top: 10px;
     
 }
 

@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 header {
@@ -125,6 +126,7 @@ nav ul li a:hover {
   font-size: 30px;
   text-align: left;
   margin-left: 20px;
+  color: black;
 }
 
   .product-container {
@@ -149,12 +151,14 @@ nav ul li a:hover {
     margin-bottom: 10px;
 }
   
-.product-card h3 {
+h3 {
     font-size: 20px;
     margin-bottom: 10px;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
   
-.product-card p {
+p {
     font-size: 14px;
     color: #777;
 }
